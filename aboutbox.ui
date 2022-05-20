@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutBox</class>
+ <widget class="QDialog" name="AboutBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>437</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="OkPushButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>280</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>20</y>
+     <width>321</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>This program uses Qt version x.x.x
+
+Qt is a C++ toolkit for cross-plattform application development.
+
+Qt provides single-source portability across all major desktop
+operating systems. It is also available for embedded Linux
+and other embedded and mobile operating systems.
+
+Qt is available under three different licensing options
+designed to accomondate the needs of our variouse users.
+
+Qt licensed under the GNU LGPL version 3 is appropriate
+for the development of Qt applications provided you can
+comply with the terms and conditions of the GNU LGPL version 3.
+
+Please see qt.io/licensing for an overview of Qt licensing.
+
+Copyright (C) 2018 The Qt Company Ltd and other contributors.
+
+Qt and the Qt logo are trademarks of the Qt Company Ltd.
+
+Qt is The Qt Company Ltd product developed as an open source
+project. See qt.io for more information.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>81</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/qt-logo/Qt.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>OkPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AboutBox</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>387</x>
+     <y>291</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>218</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
